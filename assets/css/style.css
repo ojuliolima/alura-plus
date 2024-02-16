@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --cor-primaria: #fff;
+  --cor-secundaria: #c0c0c0;
+  --cor-de-fundo: #00030c;
+  --cor-botao: #167bf7;
+  --fonte-principal: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  color: var(--cor-primaria);
+  background-color: var(--cor-de-fundo);
+}
+
+.principal {
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.principal.container {
+  text-align: center;
+  align-items: center;
+}
+
+.principal.container .titulo {
+  color: var(--cor-primaria);
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.imagem-combo {
+  margin: 1.375em 0 2em;
+  max-width: 348px;
+
+}
+
+.principal.container div {
+  margin: 0 5rem;
+}
+
+.principal.container div .btn {
+  max-width: 512px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 18px 0;
+  display: block;
+  font-size: 1rem;
+  margin: 1.375rem auto 1rem auto;
+  margin-bottom: 1em;
+}
+
+.btn-principal {
+  background-color: var(--cor-botao);
+  color: var(--cor-primaria);
+}
+
+.btn-secundario {
+  border: solid 1px var(--cor-primaria);
+  color: var(--cor-primaria);
+}
+
+.principal.container .observacao {
+  color: var(--cor-secundaria);
+  font-size: 0.75rem;
+}
+
+.secundario__imagem {
+  width: 80%;
+}
+
+.secundario, .terciario, .quartenario, .disponibilidade, .rodape {
+  align-items: center;
+  margin: 0 10em;
+}
+
+.descricao__titulo, .dispositivos__titulo {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+  color: var(--cor-secundaria);
+}
+
+.container__descricao .btn-principal {
+  border-radius: 8px;
+  padding: 16px;
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.container.terciario .descricao__texto {
+  margin-right: 70px;
+}
+
+.dispositivos__titulo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dispositivos__itens {
+  display: flex;
+  justify-content: center;
+}
+
+.dispositivos__itens__item img{
+  display: block;
+  margin-bottom: 1em;
+}
+
+.dispositivos__itens__item {
+  text-align: center;
+  margin-bottom: 145px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.rodape {
+  text-align: center;
+}
+
+.rodape__lista {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.rodape__lista li {
+  list-style-type: none;
+}
+
+.rodape__lista li a{
+  color: var(--cor-primaria);
+}
+
+.rodape__texto{
+  margin: 24px 0px;
+  color: var(--cor-secundaria)
+}
